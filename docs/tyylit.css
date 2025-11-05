@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+:root {
+    --main-font: "Open Sans";
+    --light-color: #fff;
+    --dark-color: #000000;
+    --primary-color: #4C5FD5;
+    --secondary-color: #dadbf1;
+    --wrapping: nowrap;
+    --row-to-col: row;
+    --img-above: row;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--main-font);
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+a:any-link {
+    color: inherit;
+}
+
+a:any-link:hover {
+    text-decoration: underline;
+}
+
+.project-info-banner {
+    display: flex;
+}
+
+body {
+    margin: 0;
+}
+
+.reference-page-full {
+    display: flex;
+    flex-direction: column;
+}
+
+/* school header */
+
+.project-info-banner{
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    font-size: 16px;
+    padding-left: 20vw;
+    background-color: bisque;
+}
+
+/* navbar */
+
+.reference-page-full__navbar {
+    display: flex;
+    flex-direction: var(--row-to-col);
+    justify-content: space-between;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 10px 60px;
+    align-items: center;
+}
+
+.navbar__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 4;
+}
+
+.navbar__company {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: var(--light-color) solid 2px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.navbar__company:hover {
+    color: lightslategray;
+    text-decoration: none !important;
+}
+
+.navbar__company__logo {
+    display: flex;
+    max-width: 50px;
+    margin: 0;
+    padding-right: 10px;
+    flex: 1;
+}
+
+.navbar__company__name {
+    display: flex;
+    font-size: 25px;
+}
+
+.navbar__company__name:hover {
+    text-decoration: none !important;
+    color: lightslategray;
+}
+
+.navbar__help-center {
+    display: flex;
+    font-size: 25px;
+}
+
+.navbar__help-center:hover {
+    text-decoration: underline;
+}
+
+.navbar__buttons {
+    display: flex;
+    justify-content: space-between;
+    flex: 1.25;
+}
+
+.navbar__buttons__request {
+    display: flex;
+    background-color: var(--dark-color);
+    border-color: var(--light-color);
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 12px;
+    color: var(--light-color);
+    border-style: solid;
+    text-wrap: nowrap;
+    justify-content: center;
+}
+
+.navbar__buttons__sign-in {
+    display: flex;
+    background-color: #4C5FD5;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 12px;
+    color: var(--light-color);
+    border-style: hidden;
+    text-wrap: nowrap;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+/* hero */
+
+.reference-page-full__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 90px;
+}
+
+.hero__title {
+    display: flex;
+    font-size: 80px;
+}
+
+.hero__searchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: var(--dark-color) solid 1px;
+    border-radius: 3px;
+    background-color: var(--light-color);
+    padding: 15px;
+    width: 55vw;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.hero__searchbar__bar {
+    display: flex;
+    border: none;
+    background-color: var(--light-color);
+    border-radius: 3px 0px 0px 3px;
+    width: inherit;
+    font-size: inherit;
+}
+
+.hero__searchbar__bar:focus-visible {
+    display: flex;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    width: inherit;
+}
+
+.hero__searchbar__arrow {
+    display: flex;
+    background-color: var(--light-color);
+    border-radius: 0px 3px 3px 0px;
+    font-size: inherit;
+}
+
+
+/* content */
+
+.reference-page-full__content {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.content__blockset {
+    display: flex;
+    flex-direction: var(--row-to-col);
+    flex: 1;
+    justify-content: space-between;
+}
+
+.content__item {
+    display: flex;
+    flex-direction: var(--img-above);
+    flex-wrap: nowrap;
+    flex: 1;
+    margin: 40px 0px;
+}
+
+.content__img {
+    display: flex;
+    flex: 1;
+    max-width: fit-content;
+    max-height: 150px;
+    overflow: unset;
+}
+
+.content__block {
+    display: flex;
+    align-items: flex-start;
+    flex: 3;
+    flex-direction: column;
+    padding: 0px 20px;
+
+}
+
+.content__block__title {
+    display: flex;
+    margin: 0;
+    font-size: 24px;
+}
+
+.content__block__summary {
+    display: flex;
+    margin: 20px 0px;
+    font-size: 24px;
+    text-wrap: wrap;
+}
+
+.content__block__learn-more {
+    display: flex;
+    font-size: 20px;
+}
+
+.content__block__learn-more:any-link {
+    color: var(--primary-color);
+}
+
+/* footer */
+
+.reference-page-full__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 20px 60px;
+    flex-wrap: var(--wrapping);
+}
+
+.footer__block {
+    display: flex;
+    flex-direction: column;
+    flex: 1.2;
+    margin-right: 15px;
+}
+
+.footer__block__title {
+    display: flex;
+    font-size: 24px;
+}
+
+.footer__block__link {
+    display: flex;
+    color: var(--light-color);
+    font-size: 16px;
+}
+
+.footer__block__subblock {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.footer__block__subblock__title {
+    display: flex;
+}
+
+.footer__copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+    margin-left: 150px;
+    margin-top: 160px;
+}
+
+.footer__copyright__logo {
+    display: flex;
+    max-width: 40px;
+}
+
+.footer__copyright__text {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+    :root{
+        --wrapping: wrap;
+        --row-to-col: column;
+        --img-above: row;
+    }
+}
+
+@media (max-width: 500px) {
+    :root{
+        --wrapping: wrap;
+        --row-to-col: column;
+        --img-above: column;
+    }
+}
